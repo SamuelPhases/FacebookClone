@@ -1,0 +1,28 @@
+.sidebaritem {
+  display: flex;
+  align-items: center;
+  padding: 0.8em;
+  padding-left: 0.3em;
+  /* margin-top: 3em; */
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebaritem:hover {
+  background-color: #e4e6e9;
+}
+
+.sidebaritem > .MuiSvgIcon-root {
+  font-size: 1.5rem;
+  margin-right: 0.5em;
+  color: #1d82ea;
+}
+
+.sidebaritem > h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #050505;
+}

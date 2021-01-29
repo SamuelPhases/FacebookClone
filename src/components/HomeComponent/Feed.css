@@ -1,0 +1,165 @@
+.feed {
+  flex: 0.55;
+  /* background-color: #9279; */
+  margin-right: auto;
+  margin-left: 2em;
+  padding: 0.5em 0em;
+  /* overflow-x: auto; */
+  overflow: hidden;
+}
+
+.story--reel--parent--container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.story--reel--parent--container::-webkit-scrollbar {
+  width: 0;
+}
+/* overflow: hidden; */
+
+.feed--input {
+  background-color: #fff;
+  /* background-color: royalblue; */
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 2px 0px #00000010;
+}
+
+.feed--input--row-1::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e6e9;
+}
+.feed--input--row-1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2em;
+}
+.toggler {
+  background-color: #f0f2f5;
+  width: 100%;
+  margin-left: 1em;
+  padding: 0.5em;
+  border-radius: 999px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+.toggler:hover {
+  background-color: #e4e6e9;
+}
+.feed--input--row-1 > div > p {
+  color: #707175;
+}
+
+.feed--input--row--11 > div {
+  display: flex;
+  align-items: center;
+}
+.feed--input--row--11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feed--input--row--11 > div > h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #77877c;
+}
+
+.feed--input--row--11 > div:nth-child(1) > .MuiSvgIcon-root {
+  color: #f02849;
+  font-size: 1.2rem;
+  margin-right: 0.2em;
+}
+.feed--input--row--11 > div:nth-child(2) > .MuiSvgIcon-root {
+  color: #45bd62;
+  font-size: 1.2rem;
+  margin-right: 0.2em;
+}
+.feed--input--row--11 > div:nth-child(3) > .MuiSvgIcon-root {
+  color: #f7b928;
+  font-size: 1.2rem;
+  margin-right: 0.2em;
+}
+
+.feed--room {
+  margin: 1em 0em;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  margin: 2em auto;
+  padding: 0.5em 1em;
+  box-shadow: 0px 2px 0px 0px #00000010;
+}
+
+.feed--room--1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.feed--room--left {
+  display: flex;
+  align-items: center;
+}
+
+.feed--room--left > p {
+  font-size: 0.9rem;
+  margin-right: 0.5em;
+  color: #65676b;
+}
+
+.feed--room--left > .MuiSvgIcon-root {
+  color: #e4e6e9;
+}
+
+.feed--room--right > h4,
+.feed--room--left > h4 {
+  margin: 0em 0.5em;
+  margin: 0em 0.5em;
+  font-weight: 500;
+  color: #050505;
+  font-size: 1rem;
+}
+
+.feed--room--right > h4:hover {
+  background-color: #216fdb10;
+}
+.feed--room--right > h4 {
+  color: #216fdb;
+  font-weight: 400;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 8px;
+}
+
+.feed--room--11 {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.feed--room--dp > img {
+  object-fit: cover;
+}
+.feed--room--dp {
+  width: 2.5rem;
+  overflow: hidden;
+  height: 2.5rem;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background-color: #110;
+}

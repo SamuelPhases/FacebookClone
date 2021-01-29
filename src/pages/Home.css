@@ -1,0 +1,9 @@
+.home {
+  background-color: #f0f2f5;
+}
+
+.home--body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}

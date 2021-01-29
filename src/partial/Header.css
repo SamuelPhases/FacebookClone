@@ -1,0 +1,165 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 3px 3px #00000010;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-bottom: 1em;
+  z-index: 10;
+}
+
+.header--left {
+  /* background-color: #72640a; */
+  /* flex */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.header--left > img {
+  width: 50px;
+  object-fit: contain;
+  margin-right: 0.5em;
+}
+
+.header--left--search {
+  /* background-color: #276639; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  background-color: #f0f2f5;
+  overflow: hidden;
+  padding-left: 0.5em;
+}
+
+.header--left--search > .MuiSvgIcon-root {
+  color: #606770;
+  font-size: 1.2rem;
+  cursor: text;
+  margin-top: 0.1em;
+}
+
+.header--left--search > input::placeholder {
+  color: #85878b;
+  /* color: #826; */
+}
+.header--left--search > input {
+  padding: 0.7em 0.5em;
+  border-radius: 999px;
+  width: 220px;
+  outline: none;
+  font-size: 0.9rem;
+  border: none;
+  background-color: #f0f2f5;
+  color: #464747;
+}
+
+.header--center {
+  /* background-color: #746766; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex: 0.9; */
+  /* margin-left: -em; */
+  margin: 0.1em 0em;
+}
+
+.header--center > div > .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: #65676b;
+  font-weight: 300;
+}
+.header--center > div:hover {
+  background-color: #f5f6f8;
+}
+.header--center > div {
+  margin: 0em 1em;
+  padding: 0.5em 2.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.header--center > .active:hover {
+  background-color: transparent;
+}
+.header--center > .active {
+  border-bottom: 3px solid #1877f2;
+  border-radius: 0;
+}
+.header--center > .active > .MuiSvgIcon-root {
+  color: #1877f2;
+}
+
+.header--right {
+  /* background-color: #29af00; */
+  display: flex;
+  align-items: center;
+  /* padding: 0.2em 0em; */
+}
+
+.header--right > div {
+  margin-left: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header--right--user > .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: #606770;
+  margin-right: 0.1em;
+}
+
+.header--right--user:hover {
+  background-color: #d8dadf;
+}
+
+.header--right--user {
+  display: flex;
+  align-items: center;
+  padding: 0.2em 1em;
+  padding-left: 0.2em;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.header--right--user > h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.1em;
+}
+
+.header--right > div:nth-child(2):hover,
+.header--right > div:nth-child(3):hover,
+.header--right > div:nth-child(4):hover,
+.header--right > div:nth-child(5):hover {
+  background-color: #b5b7bb;
+}
+.header--right > div:nth-child(2),
+.header--right > div:nth-child(3),
+.header--right > div:nth-child(4),
+.header--right > div:nth-child(5) {
+  /* padding: 0.5em; */
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--right > div:nth-child(2) > .MuiSvgIcon-root,
+.header--right > div:nth-child(3) > .MuiSvgIcon-root,
+.header--right > div:nth-child(4) > .MuiSvgIcon-root,
+.header--right > div:nth-child(5) > .MuiSvgIcon-root {
+  color: #1d1f23;
+  font-size: 1.2rem;
+}

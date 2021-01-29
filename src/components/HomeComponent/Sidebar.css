@@ -1,0 +1,112 @@
+.sidebar {
+  /* background-color: #828; */
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0.5em;
+  padding-bottom: 4em;
+  padding-right: 0em;
+  flex: 0.27;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* z-index: 20; */
+}
+
+.more--toggle {
+  padding: 0.8em;
+  padding-left: 0.3em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.more--toggle:hover {
+  background-color: #e4e6e9;
+}
+
+.more--toggle > div {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #d8dadf;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+/* #e4e6e9 */
+.more--toggle > h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #050505;
+}
+.more--toggle > div > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  color: #1d82ea;
+}
+
+.shortcut {
+  position: relative;
+  margin-top: 1em;
+  padding: 1em 0em;
+  width: 90%;
+  cursor: pointer;
+}
+.shortcut::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0%;
+  background-color: #ced0d4;
+}
+
+.shortcut > h3 {
+  text-transform: capitalize;
+  color: #65676b;
+}
+
+.shortcut > div > .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+.shortcut > div {
+  padding: 1em 0em;
+  display: flex;
+  align-items: center;
+}
+
+.shortcut > div > h5 {
+  margin-left: 1em;
+  /* margin-right: 3em;
+  display: inline-flex;
+  align-items: flex-start; */
+  width: 80%;
+  line-height: 1.3;
+  font-size: 1rem;
+  color: #050505;
+}
+
+.shortcut > div > h5 > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  color: #16c60c;
+  margin-bottom: -0.2em;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer > p {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin-right: 1em;
+  color: #65676b;
+}

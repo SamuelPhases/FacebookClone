@@ -1,0 +1,247 @@
+.feeds {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 2em;
+  box-shadow: 0px 2px 0px 0px #00000010;
+}
+
+.feeds--header--top {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+}
+
+.feeds--user--post--avatar {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1em;
+}
+
+.feeds--user--post--avatar > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feeds--user--info > h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #050505;
+}
+.feeds--user--info > .time {
+  display: flex;
+  align-items: center;
+}
+.feeds--user--info > .time > p {
+  color: #65676b;
+  font-size: 0.8rem;
+  margin-right: 0.5em;
+}
+
+.feeds--user--info > .time > .MuiSvgIcon-root {
+  margin-left: 0.2em;
+  font-size: 1rem;
+  color: #65676b;
+}
+
+.feeds--header--bottom > p {
+  color: #050505;
+  font-size: 1rem;
+  padding: 1em;
+  padding-left: 1.2em;
+}
+
+.feeds--like--split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 2em;
+  margin-bottom: 1em;
+}
+/* 129bfd */
+
+.feeds--like--split--left {
+  display: flex;
+  align-items: center;
+}
+
+.feeds--like--split--left > div > .MuiSvgIcon-root {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.feeds--like--split--left > div {
+  background-color: #129bfd;
+  width: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+.feeds--like--split--left > div:nth-child(2) {
+  background-color: #fa5672;
+  margin-left: -0.5em;
+  z-index: 1;
+}
+
+.feeds--like--split--right > p {
+  color: #65676b;
+  cursor: pointer;
+}
+
+.feeds--action::before {
+  top: -10%;
+}
+.feeds--action::after {
+  bottom: -10%;
+}
+.feeds--action::before,
+.feeds--action::after {
+  left: 3%;
+  content: "";
+  position: absolute;
+  width: 93%;
+  height: 1px;
+  background-color: #ced0d4;
+}
+.feeds--action {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border-top: 1px solid #ced0d4;
+  border-bottom: 1px solid #ced0d4; */
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.feeds--action > div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.feeds--action > div > p {
+  text-transform: capitalize;
+  padding-left: 0.2em;
+  color: #65676b;
+  font-weight: 450;
+}
+
+.feeds--action > div > .MuiSvgIcon-root {
+  color: #65676b;
+  font-size: 1.2rem;
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+.feeds--response {
+  padding: 0em 1.2em;
+}
+
+.feeds--response > p {
+  color: #65676b;
+  cursor: pointer;
+}
+
+.feeds--user--comment {
+  display: flex;
+  align-items: center;
+}
+
+.feeds--user--comment--dp {
+  /* flex: 0.2; */
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #725789;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 1em 0em;
+}
+
+.feeds--user--comment--dp > img {
+  object-fit: cover;
+}
+
+.feeds--user--comment--dp {
+  margin-right: 1em;
+}
+
+.feeds--user--comment > div:nth-child(2) {
+  width: fit-content;
+  background-color: #f0f2f5;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  color: #050505;
+}
+
+.feeds--user--comment > div:nth-child(2) > h2 {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.feeds--user--comment > div:nth-child(2) > p {
+  font-size: 1rem;
+}
+
+.feeds--response--comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.2em;
+}
+
+.feeds--dp > img {
+  object-fit: cover;
+}
+.feeds--dp {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #65676b;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feeds--input--comment {
+  flex: 0.97;
+  padding: 0.2em;
+  background-color: #f0f2f5;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feeds--input--comment > input {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  flex: 0.9;
+  border: none;
+  background-color: transparent;
+  padding: 0.5em 0.8em;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.feeds--input--comment > div,
+.feeds--input--comment > .MuiSvgIcon-root {
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.feeds--input--comment > div {
+  width: 2rem;
+  height: 2rem;
+  /* background-color: #277; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

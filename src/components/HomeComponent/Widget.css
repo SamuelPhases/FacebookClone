@@ -1,0 +1,136 @@
+.widget {
+  flex: 0.2;
+  margin-left: 5em;
+  padding: 0.8em 0em;
+  position: sticky;
+  right: 0;
+  top: 0;
+  height: 20vh;
+}
+
+.widget h2 {
+  color: #65676b;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.widget > h2 {
+  margin-bottom: 1em;
+}
+
+.widget--sponsored {
+  border-bottom: 1px solid #ccc;
+}
+
+.widget--sponsored > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.widget--sponsored--img > img {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; */
+}
+.widget--sponsored--img {
+  position: relative;
+  width: 150px;
+  background-color: #217;
+  border-radius: 7px;
+}
+
+.widget--sponsored--content p {
+  color: #65676b;
+  font-size: 0.8rem;
+}
+.widget--sponsored--content h3 {
+  font-size: 1rem;
+  color: #050505;
+  font-weight: 500;
+}
+
+.widget--sponsored--content {
+  padding-left: 1em;
+}
+
+.widget--birthday {
+  padding: 1em 0em;
+  padding-bottom: 0em;
+  border-bottom: 1px solid #ccc;
+}
+.widget--birthday div {
+  display: flex;
+  padding: 1em 0em;
+  align-items: center;
+}
+
+.widget--birthday > div > p {
+  font-size: 0.95rem;
+  color: #050505;
+  padding-left: 0.5em;
+}
+
+.widget--contact--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.widget--contact--icons > div > .MuiSvgIcon-root {
+  font-size: 1rem;
+  color: #65676b;
+}
+.widget--contact--icons > div:hover {
+  background-color: #65676b50;
+}
+.widget--contact--icons > div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  align-items: center;
+  justify-content: center;
+}
+.widget--contact--icons {
+  display: flex;
+  align-items: center;
+}
+
+.widget--contact {
+  padding: 1em 0em;
+}
+
+.widget--contact--list > h2 {
+  padding-left: 1em;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.widget--contact--list {
+  display: flex;
+  align-items: center;
+}
+
+.widget--contact--list > div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  object-fit: cover;
+}
+.widget--contact--list > div {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 50%;
+}
